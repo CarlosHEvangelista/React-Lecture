@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            div {
+                display: none;
+            }
+        </style>
+        <script>
+            function ShowPage(page) {
+                document.querySelectorAll("div").forEach(div => {
+                    div.style.display = 'none' 
+                })
+                document.querySelector(`#${page}`).style.display = 'block'
+            }
+        </script>
+    </head>
+    <body>
+
+        <div id="page1">
+            <h1>Page 1</h1>
+        </div>
+        <div id="page2">
+            <h1>Page 2</h1>
+        </div>
+        <div id="page3">
+            <h1>Page 3</h1>
+        </div>
+    </body>
+
+</html>
